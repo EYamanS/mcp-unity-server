@@ -39,8 +39,7 @@ namespace UnityMCP
 
         public static object SetAmbientLight(JObject args)
         {
-            Undo.RecordObject(RenderSettings.GetRenderSettings(), "Set Ambient Light");
-
+            // RenderSettings is a static class, no need for Undo.RecordObject
             if (args["color"] is JObject col)
                 RenderSettings.ambientLight = UnityMCPBridge.ParseColor(col, new Color(0.5f, 0.5f, 0.5f));
 

@@ -1,7 +1,7 @@
 {
   "name": "mcp-unity-server-yamansivrikaya",
   "version": "0.2.0",
-  "description": "MCP server for Unity Editor integration - enables AI-powered game generation and Unity automation",
+  "description": "MCP server for Unity Editor integration - enables AI-powered game generation and Unity automation. Requires Unity 2020.3+ and Newtonsoft.Json package.",
   "license": "MIT",
   "author": "Yaman Sivrikaya",
   "type": "module",

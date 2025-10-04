@@ -43,23 +43,37 @@ Assets/
             └── UITools.cs
 ```
 
-### 3. Remove Old Bridge (if exists)
+### 3. Install Required Dependencies
+
+**Install Newtonsoft.Json (Required):**
+
+**Option A: Package Manager (Recommended)**
+1. Open Unity Package Manager: `Window > Package Manager`
+2. Click the `+` button → `Add package by name`
+3. Enter: `com.unity.nuget.newtonsoft-json`
+4. Click `Add`
+
+**Option B: Manual Installation**
+1. Download from: https://github.com/JamesNK/Newtonsoft.Json/releases
+2. Import the `.unitypackage` file into your project
+
+### 4. Remove Old Bridge (if exists)
 
 If you have an old `UnityMCPBridge.cs` (single file), delete it:
 - Delete: `Assets/Editor/UnityMCP/UnityMCPBridge.cs`
 
-### 4. Wait for Compilation
+### 5. Wait for Compilation
 
 Unity will automatically detect and compile the new files. Check the Console for any errors.
 
-### 5. Verify Connection
+### 6. Verify Connection
 
 1. In Unity, go to: `Window > Unity MCP > Control Panel`
 2. You should see:
    - Status: ● Connected (green)
    - Client Count: 1
 
-### 6. Test from Cursor
+### 7. Test from Cursor
 
 In Cursor, try a simple command:
 ```
@@ -81,9 +95,15 @@ The AI should use the new tools to create it!
 - Restart Cursor
 
 ### Compilation Errors
-- Ensure you have Newtonsoft.Json in your project
+
+**"The type or namespace name 'Newtonsoft' could not be found"**
+- Install Newtonsoft.Json package (see step 3 above)
+- Use Package Manager: `com.unity.nuget.newtonsoft-json`
+
+**Other compilation errors:**
 - Check Unity version (needs 2020.3+)
 - Verify all using statements are present
+- Try reimporting: Right-click folder → Reimport
 
 ## What's New
 

@@ -49,8 +49,11 @@ Add the above to your `.cursor/mcp.json` file.
 
 ### 2. Install Unity Bridge
 
-Copy the Unity C# bridge to your Unity project:
+**Prerequisites:**
+- Unity 2020.3+ 
+- Newtonsoft.Json package (see installation guide)
 
+**Installation:**
 ```bash
 # Clone or download this repo
 git clone https://github.com/EYamanS/mcp-unity-server.git
@@ -58,6 +61,12 @@ git clone https://github.com/EYamanS/mcp-unity-server.git
 # Copy Unity bridge to your project
 cp -r mcp-unity-server/UnityMCP/* /path/to/YourUnityProject/Assets/Editor/UnityMCP/
 ```
+
+**Install Newtonsoft.Json in Unity:**
+1. Open Package Manager: `Window > Package Manager`
+2. Click `+` → `Add package by name`
+3. Enter: `com.unity.nuget.newtonsoft-json`
+4. Click `Add`
 
 ### 3. Start Using
 
