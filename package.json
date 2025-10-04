@@ -1,0 +1,50 @@
+{
+  "name": "mcp-unity-server",
+  "version": "0.2.0",
+  "description": "MCP server for Unity Editor integration - enables AI-powered game generation and Unity automation",
+  "license": "MIT",
+  "author": "Yaman Sivrikaya",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-unity-server": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "UnityMCP",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "unity",
+    "mcp",
+    "model-context-protocol",
+    "game-development",
+    "ai",
+    "unity-editor",
+    "automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EYamanS/mcp-unity-server.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.19.1",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

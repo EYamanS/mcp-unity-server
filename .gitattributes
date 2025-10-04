@@ -1,0 +1,20 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Unity files
+*.cs text diff=csharp
+*.shader text
+*.meta text
+
+# Documentation
+*.md text
+
+# Scripts
+*.sh text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.json text
+
+# Binary files
+*.png binary
+*.jpg binary

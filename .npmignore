@@ -1,0 +1,18 @@
+# Don't include these in npm package
+src/
+tsconfig.json
+.gitignore
+.git/
+.DS_Store
+*.log
+node_modules/
+.cursor/
+.vscode/
+.idea/
+
+# Include in package
+!dist/
+!UnityMCP/
+!README.md
+!LICENSE
+
