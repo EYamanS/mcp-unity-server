@@ -27,19 +27,19 @@ An MCP (Model Context Protocol) server that connects AI assistants like Claude/C
   "mcpServers": {
     "unity": {
       "command": "npx",
-      "args": ["-y", "github:EYamanS/mcp-unity-server"]
+      "args": ["-y", "mcp-unity-server-yamansivrikaya"]
     }
   }
 }
 ```
 
-**Option B: From npm (when published)**
+**Option B: From GitHub**
 ```json
 {
   "mcpServers": {
     "unity": {
       "command": "npx",
-      "args": ["-y", "mcp-unity-server"]
+      "args": ["-y", "github:EYamanS/mcp-unity-server"]
     }
   }
 }
