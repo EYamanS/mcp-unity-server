@@ -76,6 +76,7 @@ namespace UnityMCP
                 // Asset Operations
                 case "unity_create_folder": return AssetTools.CreateFolder(args.Value<string>("path"));
                 case "unity_list_assets": return AssetTools.ListAssets(args.Value<string>("type"), args?["path"]?.ToString());
+                case "unity_get_asset_path": return AssetTools.GetAssetPath(args.Value<string>("name"), args.Value<string>("assetType"));
 
                 // Specialized GameObject Creation
                 case "unity_add_audio_source": return AudioTools.AddAudioSource(args);

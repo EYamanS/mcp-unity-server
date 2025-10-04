@@ -641,6 +641,22 @@ const tools = [
       required: ["type"],
     },
   },
+  {
+    name: "unity_get_asset_path",
+    description: "Get the asset path of a GameObject or component",
+    inputSchema: {
+      type: "object",
+      properties: {
+        name: { type: "string", description: "GameObject name" },
+        assetType: { 
+          type: "string", 
+          description: "Type of asset to find (e.g., 'Material', 'Prefab', 'Script', 'Texture')",
+          enum: ["Material", "Prefab", "Script", "Texture", "AudioClip", "Animation", "AnimatorController", "Mesh", "Shader"]
+        },
+      },
+      required: ["name", "assetType"],
+    },
+  },
 
   // === PRIORITY 2: Advanced Generation ===
 
